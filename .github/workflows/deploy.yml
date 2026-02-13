@@ -1,0 +1,49 @@
+name: Deploy to Deploy Branch
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Copy files from main to deploy branch
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git checkout -b deploy
+          git rm -rf .
+          git checkout main -- .
+
+      - name: Install dependencies and build
+        run: |
+          git checkout deploy
+          sed -i '5a\  base: "/Hackathon-website-2024/",' vite.config.js # Only for Github Pages
+          npm install
+          npm run build
+
+      - name: Remove files and folders except dist
+        run: |
+          git checkout deploy
+          rm -r $(ls -A | grep -v dist | grep -v .git)
+
+      - name: Move files from dist to root
+        run: |
+          git checkout deploy
+          mv dist/* .
+          rm -rf dist
+
+      - name: Commit and push changes
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          git add .
+          git commit -m "Push build files to deploy branch"
+          git push origin deploy -f
