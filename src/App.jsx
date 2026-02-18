@@ -6,6 +6,7 @@ import TimerSection from './pages/TimerSection'
 import Navbar from './components/Navbar'
 import Tracks from './components/Tracks/Tracks'
 import Sponsors from './components/Sponsors/Sponsors'
+import PastSponsors from './components/Sponsors/PastSponsors'
 import Faq from './components/Faq/Faq'
 import Cp from './components/Cp/Cp'
 import CustomScrollbar from './components/CustomScrollbar/CustomScrollbar';
@@ -26,6 +27,7 @@ function App() {
       <Prizes />
       <Tracks />
       <Sponsors />
+      <PastSponsors />
       <Cp />
       <Faq />
       <Discord />

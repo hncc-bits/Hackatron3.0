@@ -20,6 +20,7 @@ const CustomScrollbar = () => {
         { id: 'prizes', bgPos: '0% 100%' },     // Trophy
         { id: 'tracks', bgPos: '0% 50%' },      // Flowchart
         { id: 'sponsors', bgPos: '50% 0%' },    // Handshake
+        { id: 'past-sponsors', bgPos: '50% 0%' }, // reusing Handshake icon
         { id: 'faq', bgPos: '100% 0%' },        // Question Mark
         { id: 'footer', bgPos: '100% 100%' },   // Envelope
         { id: 'upfooter', bgPos: '100% 100%' }  // Envelope
