@@ -50,7 +50,7 @@ const Whits = ()=>{
         
                    
                       <h2 className="text-4xl  text-pink-400 tracking-wide mb-6 text-center">
-                        WHAT IS HACKATRON
+                        WHAT IS HACKATRON ?
                       </h2>
         
                       

@@ -11,6 +11,7 @@ import Wihts from './components/Wihts/Wihts'
 import PastSponsors from './components/Sponsors/PastSponsors'
 import Faq from './components/Faq/Faq'
 import Cp from './components/Cp/Cp'
+import Venue from './components/Venue/Venue'
 import CustomScrollbar from './components/CustomScrollbar/CustomScrollbar';
 // import CursorFollower from './components/CursorFollower';
 
@@ -28,6 +29,7 @@ function App() {
       <About/>
       <Wihts/>
       <Hackatron2 />
+      <Venue/>
       <Prizes />
       <Tracks />
       <Sponsors />
