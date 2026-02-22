@@ -90,7 +90,7 @@ function Schedule() {
                                     className="flex flex-col justify-center items-center min-w-[330px] 3xl:min-w-[660px] m-1"
                                 >
                                     <h1 className="text-[#FF6D75] text-3xl md:text-4xl xl:text-4xl 3xl:text-6xl">
-                                        May 5
+                                        March 1
                                     </h1>
                                     <h3 className="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl 3xl:text-4xl">
                                         12:00 AM
@@ -108,7 +108,7 @@ function Schedule() {
                                     className="flex flex-col justify-center items-center min-w-[330px] 3xl:min-w-[660px] m-1"
                                 >
                                     <h1 className="text-[#FFC977] text-3xl md:text-4xl xl:text-4xl 3xl:text-6xl">
-                                        Aug 10
+                                        March 20
                                     </h1>
                                     <h3 className="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl 3xl:text-4xl">
                                         12:00 AM
@@ -126,10 +126,10 @@ function Schedule() {
                                     className="flex flex-col justify-center items-center min-w-[330px] 3xl:min-w-[660px] m-1"
                                 >
                                     <h1 className="text-[#DA77D6] text-3xl md:text-4xl xl:text-4xl 3xl:text-6xl">
-                                        Aug 24
+                                        April 4
                                     </h1>
                                     <h3 className="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl 3xl:text-4xl">
-                                        11:00 AM
+                                        09:00 AM
                                     </h3>
                                     <img src={bounty} alt=""  className='3xl:w-full'/>
                                     <h3 className="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl 3xl:text-5xl">
