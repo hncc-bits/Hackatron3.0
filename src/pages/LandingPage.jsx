@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BgLandingPage from "/images/BgLandingPage.svg";
-import HomeMascot from "/images/hero.png";
+import HomeMascot1 from "/images/HomeMascot.gif";
 import DevfolioBtn from "/images/DevfolioBtn.svg";
 import DevfolioLogo from "../assets/images/LandingPage/DevfolioLogo.svg";
 import TimerSection from "./TimerSection";
@@ -92,7 +92,7 @@ function LandingPage() {
             <div
               className="home-mascot bg-top bg-no-repeat flex items-end flex-col justify-center md:h-[80%] bg-cover"
               style={{
-                backgroundImage: `url(${HomeMascot})`,
+                backgroundImage: `url(${HomeMascot1})`,
                 backgroundSize: bgSize,
               }}
             >
