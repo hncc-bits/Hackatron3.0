@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import BgLandingPage from "/images/BgLandingPage.svg";
+import BgLandingPage from "/images/bg.png";
 import HomeMascot1 from "/images/HomeMascot.gif";
 import DevfolioBtn from "/images/DevfolioBtn.svg";
 import DevfolioLogo from "../assets/images/LandingPage/DevfolioLogo.svg";
@@ -67,7 +67,7 @@ function LandingPage() {
       <div
         className=" h-full 3xl:h-[4000px] w-full flex flex-col text-center bg-no-repeat  bg-bg_color m-0"
         style={{
-          backgroundImage: `url(${BgLandingPage})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${BgLandingPage})`,
           backgroundPosition: `${50 + bgPosition.x}% ${20 + bgPosition.y}%`,
           backgroundSize: "cover",
         }}

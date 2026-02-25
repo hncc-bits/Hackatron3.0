@@ -40,8 +40,8 @@ export default function Navbar() {
         }
     };
     return (
-        <section className="w-full relative">
-            <nav className="fixed items-center 3xl:px-[250px] px-7 z-30 flex md:justify-between bg-gradient-to-b max-[768px]:space-x-5 from-[#040842] to-[#040842]  w-full h-[96px] 3xl:h-[250px] max-[540px]:h-[60px] mt-0 bg-blue-800 font-vt323 leading-[96px] ">
+        <section className="w-full relative" style={{background:"none"}}>
+            <nav className="fixed items-center 3xl:px-[250px] px-7 z-30 flex md:justify-between max-[768px]:space-x-5 w-full h-[96px] 3xl:h-[250px] max-[540px]:h-[60px] mt-0 font-vt323 leading-[96px] bg-[#040842]/50 backdrop-blur-md">
 
                 <img className="justify-start w-14 h-14 max-md:w-10 max-md:h-10 3xl:w-[300px] 3xl:h-[300px]" src={sc1_logo} alt="Hackatron Logo"></img>
 
