@@ -1,4 +1,4 @@
-@keyframes animatedBackground {
+/*@keyframes animatedBackground {
     0% {
         background-position: 50% 0;
     }
@@ -12,4 +12,4 @@
 
 .home-mascot {
     animation: animatedBackground 5s ease-in-out infinite;
-}
+}*/
