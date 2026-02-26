@@ -30,11 +30,12 @@ function Footer() {
             <div className='main-footer'>
                 <div id="upfooter" className='bg-cover upfooter relative'>
                     <div className="flex flex-col py-5 xl:py-10 h-[100%] xl:h-[100%]  gap-5 justify-center item-center">
-                        <div className="absolute inset-0 z-0" style={{
-                            backgroundImage: `url(${stars})`,
-                            backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
-                            backgroundSize: 'cover',
-                        }}
+                        <div className="absolute inset-0 z-0"
+                        //  style={{
+                        //     backgroundImage: `url(${stars})`,
+                        //     backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
+                        //     backgroundSize: 'cover',
+                        // }}
                         ></div>
                         <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center gap-5">
                             <div className="address footerelements text-center">
@@ -87,7 +88,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className='footer-container'>
-                    <img src={footer} alt="" className='img-background' />
+                    {/* <img src={footer} alt="" className='img-background' /> */}
                     <h1 className="m-0 text-xl xl:text-2xl 3xl:text-4xl text-bottom-footer">© 2026 HnCC, BIT Sindri</h1>
                 </div>
             </div>

@@ -27,9 +27,9 @@ const Prizes = () => {
             id='prizes'
             className="pt-[30px] md:pt-[80px] relative px-5 bg-no-repeat"
             style={{
-                backgroundImage: `url(${stars})`,
-                backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
-                backgroundSize: 'cover',
+                // backgroundImage: `url(${stars})`,
+                // backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
+                // backgroundSize: 'cover',
             }}
         >
             {/* <img

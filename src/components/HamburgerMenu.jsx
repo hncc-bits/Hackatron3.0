@@ -1,104 +1,123 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-import MenuIcon from '@mui/icons-material/Menu';
 import hamburger from '../assets/images/Navbar/Vector.svg';
-export default function SwipeableTemporaryDrawer() {
+import './Navbar.css'; // Ensure your pixel-art styles are imported
 
-  const [state, setState] = React.useState({
-    top: false,
-  });
+export default function SwipeableTemporaryDrawer() {
+  const [open, setOpen] = React.useState(false);
 
   const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setState({ ...state, top: false }); // Close the drawer
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    setOpen(false);
   };
-
-  const toggleDrawer = (open) => (event) => {
-    if (
-      event &&
-      event.type === 'keydown' &&
-      (event.key === 'Tab' || event.key === 'Shift')
-    ) {
-      return;
-    }
-
-    setState({ ...state, top: open }); // Spread previous state
-  };
-
-  const list = (
-    <Box id="box"
-    //   bgcolor={'slateblue'}
-      //sx={{color:'white', width: '100%', background: 'linear-gradient(#040842, #040842)',fontFamily: 'vt323'}}
-      sx={{
-        color: 'white',
-        width: '100%',
-        background: 'linear-gradient(#040842, #040842)',
-        opacity: '10',
-        fontFamily: 'vt323,', // Apply the 'vt323' font here
-      }}
-      role="presentation"
-      onClick={toggleDrawer(false)}
-      onKeyDown={toggleDrawer(false)}
-    >
-      <List>
-        {['SCHEDULE','ABOUTUS','VENUE', 'PRIZES', 'TRACKS', 'SPONSORS', 'FAQ', 'CONTACT US'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton onClick={() => {
-                const id = text === 'CONTACT US' ? 'footer' : text.toLowerCase();
-                scrollToSection(id);
-              }}>
-              {/* <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon> */}
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      {/* <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List> */}
-    </Box>
-  );
 
   return (
-    <div className='justify-end relative min-[768px]:hidden w-[30px] h-[60px]' >
-      {/* Conditionally render hamburger menu icon */}
-      {/* <Button className='w-[20%] pr-0 pt-0' onClick={toggleDrawer(!state.top)} style={{ zIndex: state.top ? 9999 : 1 }}>
-      <img className="min-[450px]:hidden min-[320px]:w-[30%] min-[320px]:pr-[0] min-[320px]:h-[18%] min-[320px]:mt-[40%] min-[320px]:mr-[30%]" src="./images/Vector.svg" ></img>
-      </Button> */}
-      <button onClick={toggleDrawer(!state.top)} style={{ zIndex: 9999,position: 'fixed', }}><img className="min-[768px]:hidden min-[320px]:pr-[0] min-[320px]:h-[40%]" src={hamburger} ></img></button>
+    <div className="min-[768px]:hidden">
+      {/* HAMBURGER BUTTON */}
+      <button
+        onClick={() => setOpen(true)}
+        className="
+          fixed top-[22px] right-6 z-[9999]
+          p-2
+          bg-[#080c0a]/80
+          border border-[#39FF14]/20
+          active:scale-95
+          pixel-art
+        "
+      >
+        <img
+          src={hamburger}
+          className="w-5 h-5 opacity-90"
+          alt="menu"
+        />
+      </button>
+
+      {/* DRAWER */}
       <SwipeableDrawer
         anchor="top"
-        style={{ zIndex: 1000 }}
-        open={state.top}
-        onClose={toggleDrawer(false)}
-        onOpen={toggleDrawer(true)}
+        open={open}
+        onClose={() => setOpen(false)}
+        onOpen={() => setOpen(true)}
+        PaperProps={{
+          sx: {
+            backgroundColor: '#080c0a', // Consistent with Navbar
+            borderBottom: '2px solid rgba(57, 255, 20, 0.2)',
+          },
+        }}
       >
-        {list}
+        <Box
+          className="relative overflow-hidden font-vt323 text-white"
+          sx={{ width: '100%' }}
+        >
+          <List className="relative z-10 pt-4">
+            
+            {/* NEW: CLOSE OPTION */}
+            <ListItem disablePadding>
+              <ListItemButton
+                onClick={() => setOpen(false)}
+                sx={{
+                  justifyContent: 'center',
+                  '&:hover': { backgroundColor: 'transparent' },
+                }}
+              >
+                <ListItemText
+                  primary="[ X ] CLOSE MENU"
+                  primaryTypographyProps={{
+                    fontSize: '1.2rem',
+                    color: '#ff4d4d', // Red for visibility
+                    textAlign: 'center',
+                    fontFamily: 'vt323'
+                  }}
+                />
+              </ListItemButton>
+            </ListItem>
+
+            {[
+              ['SCHEDULE', 'schedule'],
+              ['ABOUT', 'aboutus'],
+              ['VENUE', 'venue'],
+              ['PRIZES', 'prizes'],
+              ['TRACKS', 'tracks'],
+              ['SPONSORS', 'sponsors'],
+              ['FAQ', 'faq'],
+              ['CONTACT US', 'footer'],
+            ].map(([label, id]) => (
+              <ListItem key={id} disablePadding>
+                <ListItemButton
+                  onClick={() => scrollToSection(id)}
+                  sx={{
+                    textAlign: 'center',
+                    py: 2,
+                    // Remove background change, only change text color
+                    '&:hover': {
+                      backgroundColor: 'transparent',
+                    },
+                  }}
+                >
+                  <ListItemText
+                    primary={label}
+                    className="nav-pixel-link" // Uses the pixel hover from your CSS
+                    primaryTypographyProps={{
+                      fontSize: '1.8rem',
+                      letterSpacing: '0.1em',
+                      fontFamily: 'vt323',
+                      // Material UI Specific Hover Color override
+                      '&:hover': {
+                        color: '#39FF14', 
+                      }
+                    }}
+                  />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+        </Box>
       </SwipeableDrawer>
     </div>
   );

@@ -25,11 +25,13 @@ const Hackatron2 = () => {
     }, []);
 
     return (
-        <section id='sc0' className="max-[768px]:pt-[30px] pt-[80px] relative mb-10 px-5 bg-no-repeat" style={{
-            backgroundImage: `url(${stars})`,
-            backgroundPosition: `${50}% calc(50% - ${bgPosition.y}px)`,
-            backgroundSize: 'cover',
-        }}>
+        <section id='sc0' className="max-[768px]:pt-[30px] pt-[80px] relative mb-10 px-5 bg-no-repeat" 
+        // style={{
+        //     backgroundImage: `url(${stars})`,
+        //     backgroundPosition: `${50}% calc(50% - ${bgPosition.y}px)`,
+        //     backgroundSize: 'cover',
+        // }}
+        >
             {/* <img src={stars} className=" z-0 absolute pointer-events-none w-screen sm:opacity-60 opacity-80"></img> */}
             <div className='text-white max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto relative'>
                 <h1 className='py-6 md:text-left text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]'>$ man <span className='text-white'>Hackatron<span className='text-red'> 2.0</span></span></h1>

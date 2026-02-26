@@ -14,6 +14,7 @@ import Cp from './components/Cp/Cp'
 import Venue from './components/Venue/Venue'
 import CustomScrollbar from './components/CustomScrollbar/CustomScrollbar';
 // import CursorFollower from './components/CursorFollower';
+import FallingLeaves from './components/FallingLeaves';
 
 import LandingPage from './pages/LandingPage'
 import Hackatron2 from './components/Hackatron2/Hackatron2'
@@ -23,6 +24,7 @@ function App() {
   return (
     <>
       <CustomScrollbar />
+      <FallingLeaves />
       {/* <CursorFollower /> */}
       <Navbar />
       <LandingPage />

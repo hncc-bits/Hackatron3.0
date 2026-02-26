@@ -59,9 +59,9 @@ const Sponsors = () => {
 
     return (
         <section className="max-[768px]:pt-[40px] pt-[80px] relative" style={{
-            backgroundImage: `url(${stars})`,
-            backgroundPosition: `${50}% ${50 - bgPosition.y}%`,
-            backgroundSize: bgSize,
+            // backgroundImage: `url(${stars})`,
+            // backgroundPosition: `${50}% ${50 - bgPosition.y}%`,
+            // backgroundSize: bgSize,
         }} id='sponsors'>
             <div className="max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto">
                 <h1 className='mx-5 xl:mx-0 py-6 md:text-left text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]'>$ tar -xvzf <span className='text-white'>SPONSORS</span>.tar.gz</h1>

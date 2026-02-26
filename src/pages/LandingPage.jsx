@@ -65,11 +65,12 @@ function LandingPage() {
   return (
     <>
       <div
-        className=" h-full 3xl:h-[4000px] w-full flex flex-col text-center bg-no-repeat  bg-bg_color m-0"
+        className=" h-full 3xl:h-[4000px] w-full flex flex-col text-center bg-no-repeat   m-0"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${BgLandingPage})`,
+          // backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${BgLandingPage})`,
           backgroundPosition: `${50 + bgPosition.x}% ${20 + bgPosition.y}%`,
           backgroundSize: "cover",
+          zIndex:"2"
         }}
       >
         {/* Hero section */}

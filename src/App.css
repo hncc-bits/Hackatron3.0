@@ -1,12 +1,20 @@
-#root {
-  /* text-align: center; */
-  /* background-color: #040842;*/
-  /* height: 100%; */
-  background-color: #040842;
+
+
+/* index.css or App.css */
+body {
+  margin: 0;
+  padding: 0;
+  /* Your Background Image lives here now */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps image still while scrolling */
+  background-color: #080c0a; /* Fallback color */
 }
 
-body {
-  background-color: #040842;
+/* Ensure the root React div doesn't block the view */
+#root {
+  background: transparent;
 }
 
 .logo {

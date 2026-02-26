@@ -24,11 +24,11 @@ const About = () => {
     <section
       id="aboutus"
       className="pt-[30px] md:pt-[80px] relative px-5 bg-no-repeat bg-cover"
-       style={{
-                      backgroundImage: `url(${stars})`,
-                      backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
-                      backgroundSize: 'cover',
-                  }}
+      //  style={{
+      //                 backgroundImage: `url(${stars})`,
+      //                 backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
+      //                 backgroundSize: 'cover',
+      //             }}
     >
       <div className="text-white max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto ">
 

@@ -78,9 +78,9 @@ const Tracks = () => {
 
     return (
         <section id='tracks' className="max-[768px]:pt-[30px] pt-[80px] relative mb-10 px-5 bg-no-repeat" style={{
-            backgroundImage: `url(${stars})`,
-            backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
-            backgroundSize: 'cover',
+            // backgroundImage: `url(${stars})`,
+            // backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
+            // backgroundSize: 'cover',
         }}>
             {/* <img src={stars} className=" z-0 absolute pointer-events-none w-screen opacity-50"></img> */}
             <img src={trackData[selectedTrack - 1].image} alt="" className='z-1 absolute pointer-events-none left-0 right-0 mx-auto max-w-full xl:-translate-y-48 opacity-50'/>
