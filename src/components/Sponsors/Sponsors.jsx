@@ -136,7 +136,7 @@ const Sponsors = () => {
                 </div>
             </div>
             <div
-                className="absolute h-screen top-[99%] object-cover opacity-70 inset-0"
+                className="absolute h-screen top-[99%] object-cover opacity-70 inset-0 pointer-events-none"
                 style={{
                     backgroundImage: `url(${stars})`,
                     backgroundPosition: `${50}% ${50 + bgPosition.y}%`,
