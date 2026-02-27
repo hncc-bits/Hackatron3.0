@@ -5,7 +5,7 @@ import linkedinLogo from '../../assets/images/footer/linkedin_logo.png';
 import discordLogo from '../../assets/images/footer/discord_logo.png';
 import stars from '../../assets/images/footer/stars.svg';
 import './Footer.css';
-import footer from '../../assets/images/footer/newFooter.png';
+import footer from '../../assets/images/footer/footerNew.png';
 
 function Footer() {
     const [bgPosition, setBgPosition] = useState({ x: 0, y: 0 });
@@ -69,19 +69,19 @@ function Footer() {
                                     STAY CONNECTED
                                 </h1>
                                 <div className="flex justify-center xl:justify-between gap-7 md:gap-10">
-                                    <a href="add insta link here" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.instagram.com/hnccbits?igsh=MXE5ZXcxOGFwMGplbA==" target="_blank" rel="noopener noreferrer">
                                         <img className="sociallogos insta_logo brightness-0 invert-[1] hover:filter-none w-auto h-auto max-w-[30px] 3xl:max-w-[60px]" src={instaLogo} alt="insta_logo" />
                                     </a>
-                                    <a href="add twitter link here" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://x.com/hnccbits" target="_blank" rel="noopener noreferrer">
                                         <img className="twitter_logo sociallogos brightness-0 invert-[1] hover:invert-[0.5] w-auto h-auto max-w-[30px] 3xl:w-[60px]" src={twitterLogo} alt="twitter_logo" />
                                     </a>
-                                    <a href=" add linked in link here" target="_blank" rel="noopener noreferrer" className="relative w-[30px]">
+                                    <a href="https://www.linkedin.com/company/hnccbits/" target="_blank" rel="noopener noreferrer" className="relative w-[30px]">
                                         <img className="sociallogos linkedin_logo absolute w-auto h-auto max-w-[30px] 3xl:max-w-[60px] peer z-10 brightness-0 invert-[1] hover:filter-none" src={linkedinLogo} alt="linkedin_logo" />
                                         <div className="w-[70%] h-[75%] absolute top-2 left-2 peer-hover:bg-white"></div>
                                     </a>
-                                    <a href="add discord link here" target="_blank" rel="noopener noreferrer">
+                                    {/*<a href="add discord link here" target="_blank" rel="noopener noreferrer">
                                         <img className="sociallogos discord_logo brightness-0 invert-[1] hover:filter-none w-auto h-auto max-w-[30px] 3xl:max-w-[60px]" src={discordLogo} alt="discord_logo" />
-                                    </a>
+                                    </a>*/}
                                 </div>
                             </div>
                         </div>
