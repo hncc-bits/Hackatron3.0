@@ -5,7 +5,7 @@ import linkedinLogo from '../../assets/images/footer/linkedin_logo.png';
 import discordLogo from '../../assets/images/footer/discord_logo.png';
 import stars from '../../assets/images/footer/stars.svg';
 import './Footer.css';
-import footer from '../../assets/images/footer/footer.png';
+import footer from '../../assets/images/footer/newFooter.png';
 
 function Footer() {
     const [bgPosition, setBgPosition] = useState({ x: 0, y: 0 });
@@ -88,7 +88,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className='footer-container'>
-                    {/* <img src={footer} alt="" className='img-background' /> */}
+                    <img src={footer} alt="" className='img-background' />
                     <h1 className="m-0 text-xl xl:text-2xl 3xl:text-4xl text-bottom-footer">© 2026 HnCC, BIT Sindri</h1>
                 </div>
             </div>

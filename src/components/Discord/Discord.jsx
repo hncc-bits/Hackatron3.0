@@ -26,7 +26,7 @@ function Discord() {
             <div
                 className="absolute top-[-50px] opacity-70 h-screen object-cover inset-1"
                 style={{
-                    backgroundImage: `url(${stars})`,
+                    //backgroundImage: `url(${stars})`,
                     backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
