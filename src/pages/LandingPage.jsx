@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BgLandingPage from "/images/bg.png";
+import head from "/images/head.png";
 import HomeMascot1 from "/images/HomeMascot.gif";
 import DevfolioBtn from "/images/DevfolioBtn.svg";
 import DevfolioLogo from "../assets/images/LandingPage/DevfolioLogo.svg";
@@ -78,7 +79,7 @@ function LandingPage() {
           id="hero"
           className=" ml-5 mr-5 max-[540px]:mt-[60px] mt-[110px]  3xl:mt-[250px] "
         >
-          <div className="">
+          {/*<div className="">
             <h1
               className="text-white min-[320px]:text-5xl md:text-7xl xl:text-8xl  3xl:text-[12vh] font-vt323 max-sm:mt-10"
               style={{ textShadow: "2px 2px 0 rgb(236, 83, 176, 1)" }}
@@ -88,7 +89,12 @@ function LandingPage() {
             <h3 className="text-purple-900 font-vt323 min-[320px]:text-[20px] md:text-3xl xl:text-[40px] 3xl:m-11 2xl:p-10 2xl:text-[4vh] bg-gradient-to-r from-gradient_blue_purple-0 via-gradient_blue_purple-50 to-gradient_blue_purple-100  text-transparent bg-clip-text">
               DESIGN. DEVELOP. DEPLOY.
             </h3>
+          </div>*/}
+
+          <div className='head-container'>
+              <img src={head} alt="" className='imgHead-background' />
           </div>
+
           <div className="flex text-center justify-center mt-5 xl:mt-1 ml-5 mr-5 3xl:m-11">
             <div
               className="home-mascot bg-top bg-no-repeat flex items-end flex-col justify-center md:h-[80%] bg-cover"

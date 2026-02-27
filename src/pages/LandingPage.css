@@ -13,3 +13,14 @@
 .home-mascot {
     animation: animatedBackground 5s ease-in-out infinite;
 }*/
+
+.head-container{
+    display: flex;
+    justify-content: center;
+}
+.imgHead-background {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    margin-block: 5%;
+}
