@@ -74,9 +74,9 @@ export default function Navbar() {
                 bg-[#080c0a]/80 border-b border-[#39FF14]/20 backdrop-blur-md">
 
                 {/* Pixelated Logo Effect */}
-                <a href="https://hackatron3-0.vercel.app/">
+                <a href="/#hero" >
                     <img
-                        className="justify-start w-14 h-14 max-md:w-10 max-md:h-10 3xl:w-[300px] 3xl:h-[300px] pixel-art"
+                        className="justify-start w-10 h-10 max-md:w-8 max-md:h-8 max-[540px]:w-7 max-[540px]:h-7 3xl:w-[150px] 3xl:h-[150px] pixel-art"
                         src={sc1_logo}
                         alt="Hackatron Logo"
                     />
