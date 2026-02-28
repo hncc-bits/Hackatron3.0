@@ -79,20 +79,19 @@ function LandingPage() {
           id="hero"
           className=" ml-5 mr-5 max-[540px]:mt-[60px] mt-[110px]  3xl:mt-[250px] "
         >
-          {/*<div className="">
-            <h1
+          <div className="">
+            {/*<h1
               className="text-white min-[320px]:text-5xl md:text-7xl xl:text-8xl  3xl:text-[12vh] font-vt323 max-sm:mt-10"
               style={{ textShadow: "2px 2px 0 rgb(236, 83, 176, 1)" }}
             >
               HACKATRON <span className="text-red">3.0</span>
-            </h1>
-            <h3 className="text-purple-900 font-vt323 min-[320px]:text-[20px] md:text-3xl xl:text-[40px] 3xl:m-11 2xl:p-10 2xl:text-[4vh] bg-gradient-to-r from-gradient_blue_purple-0 via-gradient_blue_purple-50 to-gradient_blue_purple-100  text-transparent bg-clip-text">
+            </h1>*/}
+            <div className='head-container'>
+              <img src={head} alt="" className='imgHead-background' />
+            </div>
+            <h3 className="font-vt323 font-bold min-[320px]:text-[28px] md:text-5xl xl:text-[60px] 2xl:text-[6vh] 3xl:m-11 2xl:p-10 text-[#F0C36D] tracking-widest">
               DESIGN. DEVELOP. DEPLOY.
             </h3>
-          </div>*/}
-
-          <div className='head-container'>
-              <img src={head} alt="" className='imgHead-background' />
           </div>
 
           <div className="flex text-center justify-center mt-5 xl:mt-1 ml-5 mr-5 3xl:m-11">
@@ -105,26 +104,17 @@ function LandingPage() {
             >
               <div className="text-center justify-center gap-2 min-[320px]:mt-[25%] md:mt-0 " >
                 {/* <a href=""> */}
-                <div
-
-                  className="bg-no-repeat bg-center  bg-cover  text-center justify-center flex flex-row min-[320px]:mt-[25%] min-[640px]:mt-[10%] min-[750px]:mt-[6%] md:mt-[27%] lg:mt-[22%] xl:mt-[20%] 3xl:mt-[21%]"
-                  style={{
-                    backgroundImage: `url(${DevfolioBtn})`,
-                    backgroundSize: "contain",
-
-
-                  }}
-                >
-                  <button onClick={() =>
-                    window.open("add link")
-                  }
-                    className="text-purple font-vt323 text-2xl text-center justify-center  flex  mt-2 mb-2 xl:text-4xl gap-3 3xl:gap-11 3xl:text-7xl 3xl:m-5     ">
-                    <img className="xl:w-[4vh] 3xl:w-[5vh]" src={DevfolioLogo} />
-                    <p className="3xl:mt-5">Apply with Devfolio </p>
+                <div className="flex justify-center items-center w-full min-[320px]:mt-[25%] min-[640px]:mt-[10%] min-[750px]:mt-[6%] md:mt-[27%] lg:mt-[22%] xl:mt-[20%] 3xl:mt-[21%]">
+                  <button 
+                    onClick={() => window.open("add link")}
+                    className="flex items-center justify-center gap-3 px-8 py-3 my-4 font-vt323 text-2xl xl:text-4xl 3xl:text-7xl 3xl:gap-8 bg-[#F0C36D] text-black border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] transition-all duration-150 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_rgba(0,0,0,1)] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none"
+                  >
+                    <img className="w-8 xl:w-[4vh] 3xl:w-[5vh]" src={DevfolioLogo} alt="Devfolio Logo" />
+                    <p className="mt-1">Apply with Devfolio</p>
                   </button>
                 </div>
                 {/* </a> */}
-                <p className="max-[540px]:leading-normal md:leading-tight xl:leading-normal md:text-[22px] xl:text-[24px] 2xl:text-[3vh] 3xl:pl-[17vh] 3xl:pr-[17vh] 3xl:p-11 2xl:p-5 font-vt323 min-[320px]:text-[18px] md:text-2xl m-3 bg-gradient-to-b text-purple bg-clip-text">
+                <p className="max-[540px]:leading-normal md:leading-tight xl:leading-normal md:text-[22px] xl:text-[24px] 2xl:text-[3vh] 3xl:pl-[17vh] 3xl:pr-[17vh] 3xl:p-11 2xl:p-5 font-vt323 min-[320px]:text-[18px] md:text-2xl m-3 text-[#D8C39A]">
                   Boot up your brilliance at Hackatron 3.0 — a 36-hour code sprint engineered for builders, breakers, and boundary-pushers. Dive into diverse tech tracks, architect bold solutions, and ship real prototypes alongside fellow geeks. Debug limits, deploy innovation, and turn caffeine into commits.
                 </p>
 
