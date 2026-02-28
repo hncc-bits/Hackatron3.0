@@ -89,10 +89,11 @@ function LandingPage() {
             <div className='head-container'>
               <img src={head} alt="" className='imgHead-background' />
             </div>
-            <h3 className="font-vt323 min-[320px]:text-[20px] md:text-3xl xl:text-[40px] 3xl:m-11 2xl:p-10 2xl:text-[4vh] text-[#F0C36D] tracking-widest">
-              DESIGN. DEVELOP. DEPLOY.
+            <h3 className="font-vt323 font-bold min-[320px]:text-[28px] md:text-5xl xl:text-[60px] 2xl:text-[6vh] 3xl:m-11 2xl:p-10 text-[#F0C36D] tracking-widest">
+              DESIGN. DEBUG. DEPLOY.
             </h3>
           </div>
+
           <div className="flex text-center justify-center mt-5 xl:mt-1 ml-5 mr-5 3xl:m-11">
             <div
               className="home-mascot bg-top bg-no-repeat flex items-end flex-col justify-center md:h-[80%] bg-cover"
