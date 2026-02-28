@@ -71,7 +71,7 @@ function LandingPage() {
           // backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${BgLandingPage})`,
           backgroundPosition: `${50 + bgPosition.x}% ${20 + bgPosition.y}%`,
           backgroundSize: "cover",
-          zIndex:"2"
+          zIndex: "2"
         }}
       >
         {/* Hero section */}
