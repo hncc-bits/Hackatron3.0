@@ -42,7 +42,7 @@ const Whits = ()=>{
         
                 
                 <h1 className="py-6 text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]">
-                  $ mkdir <span className="text-white">HACKATRON</span>
+                  $ man --intro <span className="text-white">HACKATRON</span>
                 </h1>
         
                

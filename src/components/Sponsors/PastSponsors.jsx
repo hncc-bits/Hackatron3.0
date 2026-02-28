@@ -56,7 +56,7 @@ const PastSponsors = () => {
             // backgroundSize: bgSize,
         }} id='past-sponsors'>
             <div className="max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto">
-                <h1 className='mx-5 xl:mx-0 py-6 md:text-left text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]'>$ cd ../legacy/<span className='text-white'>PAST_SPONSORS</span></h1>
+                <h1 className='mx-5 xl:mx-0 py-6 md:text-left text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]'>$ zcat <span className='text-white'>PAST_SPONSORS</span>.gz</h1>
 
                 <div className='mb-4 flex flex-col gap-1 sm:gap-1'>
                     <p className='font-vt323 text-gray-400 w-[90vw] leading-[5vw] text-[4.5vw] sm:leading-0 sm:px-0  sm:w-[70vw] sm:text-lg sm:leading-5 md:text-[2.8vw] md:leading-6 md:w-[75vw] lg:text-xl lg:w-[56vw] lg:leading-5 xl:text-3xl xl:w-[55rem] 3xl:text-5xl 3xl:w-[75rem] text-center mx-auto'>Thank you to our generous sponsors from previous years!</p>

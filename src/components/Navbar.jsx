@@ -106,10 +106,10 @@ export default function Navbar() {
                 <div className="flex gap-4 max-md:gap-2 items-center">
                     <a href="https://www.bitsindri.ac.in/" target="_blank">
 
-                        <img className="w-12 h-12 max-md:w-8 max-md:h-8 rendering-pixelated" src={bitlogo} alt="" />
+                        <img className="w-12 h-12 max-md:w-8 max-md:h-8 rendering-pixelated" src={bitlogo} alt="BIT Sindri Logo" />
                     </a>
-                    <a href="https://www.hnccbits.com/" target="_blank">
-                        <img className="w-14 h-14 max-md:w-10 max-md:h-10 rendering-pixelated" src={iiit_logo_mobile} alt=""
+                    <a href="https://www.hnccbits.com/" target="_blank" rel="noopener noreferrer">
+                        <img className="w-14 h-14 max-md:w-10 max-md:h-10 rendering-pixelated" src={iiit_logo_mobile} alt="HnCC Logo"
                         />
                     </a>
                     <SwipeableTemporaryDrawer />

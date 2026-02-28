@@ -41,7 +41,7 @@ const Prizes = () => {
             <div className='text-white max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto z-2'>
 
                 <h1 className="py-6 md:text-left text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]">
-                    $ vi <span className="text-white">PRIZES</span>.yml
+                    $ sudo decrypt <span className="text-white">PRIZES</span>.enc
                 </h1>
                 <div className="flex justify-center items-center h-full">
                     <div className="px-4 sm:p-10 text-left w-[90vw] sm:w-[80vw] mx-auto">

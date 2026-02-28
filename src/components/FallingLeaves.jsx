@@ -1,6 +1,6 @@
 import React, { useMemo, useEffect, useState } from 'react';
 import './FallingLeaves.css';
-import leaf1 from '../assets/images/leaf1.png'; 
+import leaf1 from '../assets/images/leaf1.png';
 import leaf2 from '../assets/images/leaf2.png';
 
 const FallingLeaves = ({ count = 20 }) => {
@@ -12,7 +12,7 @@ const FallingLeaves = ({ count = 20 }) => {
   //     // Calculate a gust value based on horizontal mouse speed
   //     const intensity = Math.min(Math.abs(e.movementX) * 2, 100);
   //     setGust(e.movementX > 0 ? intensity : -intensity);
-      
+
   //     // Reset gust after mouse stops
   //     clearTimeout(timeout);
   //     timeout = setTimeout(() => setGust(0), 500);
@@ -27,8 +27,8 @@ const FallingLeaves = ({ count = 20 }) => {
       id: i,
       image: Math.random() > 0.5 ? leaf1 : leaf2,
       left: Math.random() * 100,
-      delay: Math.random() * -20, 
-      duration: 15 + Math.random() * 15, // Slower for background elegance
+      delay: Math.random() * -20,
+      duration: 30 + Math.random() * 40, // Increased base and random range for slower animation
       size: 12 + Math.random() * 30,
       drift: (Math.random() - 0.5) * 150,
       rotation: Math.random() * 360,
@@ -37,7 +37,7 @@ const FallingLeaves = ({ count = 20 }) => {
   }, [count]);
 
   return (
-    <div className="leaf-container" style={{ 
+    <div className="leaf-container" style={{
       // '--gust': `${gust}px` 
     }}>
       {leaves.map((leaf) => (

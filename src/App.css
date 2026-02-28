@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 
 /* index.css or App.css */
 body {
