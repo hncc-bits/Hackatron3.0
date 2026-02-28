@@ -61,7 +61,7 @@ hackatron2-container {
   border-radius: 0;
   object-fit: cover;
   width: 70%;
-  filter: saturate(1.5) brightness(1.1) contrast(1.1) hue-rotate(10deg);
+  filter: saturate(1.5) brightness(1.1) contrast(1.1) hue-rotate(10deg); 
   border: 4px dashed #00FF00;
   transition: all 0.3s ease;
 }
@@ -124,7 +124,8 @@ hackatron2-container {
   height: 100%;
   border-radius: 0 px;
   object-fit: cover;
-  filter: saturate(1.5) brightness(1.1) contrast(1.1) hue-rotate(10deg);
+  filter: saturate(1.5) brightness(1.1) contrast(1.1) hue-rotate(10deg); 
+  
   border: 4px dashed #00FF00;
   transition: all 0.3s ease;
 }
@@ -149,7 +150,7 @@ hackatron2-container {
 .bottom-container>img {
   border-radius: 0 px;
   object-fit: cover;
-  filter: saturate(1.5) brightness(1.1) contrast(1.1) hue-rotate(10deg);
+  filter: saturate(1.5) brightness(1.1) contrast(1.1) hue-rotate(10deg); 
   border: 4px dashed #00FF00;
   transition: all 0.3s ease;
 }
