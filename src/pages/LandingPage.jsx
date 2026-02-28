@@ -90,7 +90,7 @@ function LandingPage() {
               <img src={head} alt="" className='imgHead-background' />
             </div>
             <h3 className="font-vt323 font-bold min-[320px]:text-[28px] md:text-5xl xl:text-[60px] 2xl:text-[6vh] 3xl:m-11 2xl:p-10 text-[#F0C36D] tracking-widest">
-              DESIGN. DEVELOP. DEPLOY.
+              DESIGN. DEBUG. DEPLOY.
             </h3>
           </div>
 
