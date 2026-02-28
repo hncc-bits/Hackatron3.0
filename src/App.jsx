@@ -1,4 +1,5 @@
 import './App.css'
+import { useState } from 'react'
 import Footer from './components/Footer/Footer'
 import Discord from './components/Discord/Discord'
 import Schedule from './components/Schedule/Schedule'
@@ -16,13 +17,17 @@ import CustomScrollbar from './components/CustomScrollbar/CustomScrollbar';
 // import CursorFollower from './components/CursorFollower';
 import FallingLeaves from './components/FallingLeaves';
 
+import Preloader from './components/Preloader/Preloader'
+
 import LandingPage from './pages/LandingPage'
 import Hackatron2 from './components/Hackatron2/Hackatron2'
 import Prizes from './components/Prizes/Prizes'
 function App() {
-
+  const [loading, setLoading] = useState(true);
   return (
     <>
+     {loading && <Preloader onComplete={() => setLoading(false)} />}
+      <div className={`transition-opacity duration-700 ${loading ? 'opacity-0 h-0 overflow-hidden' : 'opacity-100'}`}></div>
       <CustomScrollbar />
       <FallingLeaves />
       {/* <CursorFollower /> */}

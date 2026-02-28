@@ -77,7 +77,7 @@ function Schedule() {
                 }}
             >
                 <div className='max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto'>
-                    <h1 className='mx-5 xl:mx-0 py-6 text-left text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]'>$ cat <span className='text-white'>SCHEDULE</span>.txt</h1>
+                    <h1 className='mx-5 xl:mx-0 py-6 text-left text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]'>$ tail -f <span className='text-white'>SCHEDULE</span>.log</h1>
                     <div className="mx-5 xl:mx-0 timeline mx-30 flex justify-center">
                         <button className="prev mr-10 opacity-50 hover:opacity-100 min-w-[30px] 3xl:min-w-[60px]">
                             <img src={left_key} alt="" />

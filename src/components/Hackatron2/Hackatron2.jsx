@@ -26,9 +26,7 @@ const Hackatron2 = () => {
   }, []);
 
   return (
-
     <section id='sc0' className="max-[768px]:pt-[30px] pt-[80px] relative mb-10 px-5 bg-no-repeat">
-    
       <Glimpse />
     </section>
 

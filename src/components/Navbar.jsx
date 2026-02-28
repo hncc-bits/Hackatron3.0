@@ -74,7 +74,7 @@ export default function Navbar() {
                 bg-[#080c0a]/80 border-b border-[#39FF14]/20 backdrop-blur-md">
 
                 {/* Pixelated Logo Effect */}
-                <a href="https://hackatron3-0.vercel.app/" target="_blank">
+                <a href="/#hero" >
                     <img
                         className="justify-start w-14 h-14 max-md:w-10 max-md:h-10 3xl:w-[300px] 3xl:h-[300px] pixel-art"
                         src={sc1_logo}
@@ -103,13 +103,13 @@ export default function Navbar() {
                     ))}
                 </ul>
 
-                <div className="flex gap-4 max-md:gap-2 items-center">
-                    <a href="https://hackatron3-0.vercel.app/" target="_blank">
+                <div className="flex gap-4 items-center">
+                    <a href="https://www.bitsindri.ac.in/" target="_blank" rel="noopener noreferrer">
 
-                        <img className="w-12 h-12 max-md:w-8 max-md:h-8 rendering-pixelated" src={bitlogo} alt="" />
+                        <img className="w-12 h-12 max-md:w-8 max-md:h-8 rendering-pixelated" src={bitlogo} alt="BIT Sindri Logo" />
                     </a>
-                    <a href="https://www.hnccbits.com/" target="_blank">
-                        <img className="w-14 h-14 max-md:w-10 max-md:h-10 rendering-pixelated" src={iiit_logo_mobile} alt=""
+                    <a href="https://www.hnccbits.com/" target="_blank" rel="noopener noreferrer">
+                        <img className="w-14 h-14 max-md:w-10 max-md:h-10 rendering-pixelated" src={iiit_logo_mobile} alt="HnCC Logo"
                         />
                     </a>
                     <SwipeableTemporaryDrawer />

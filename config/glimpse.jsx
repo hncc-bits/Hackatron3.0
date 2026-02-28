@@ -5,7 +5,7 @@ export const glimpseConfig = [
     content2: "10 PARTNERS",
     src1: "/images/glimpse/pic1.webp",
     src2: "/images/glimpse/pic6.webp",
-    src3: "/images/glimpse/pic9 copy.webp",
+    src3: "/images/glimpse/pic13.webp",
   },
   {
     id: "2",
