@@ -73,8 +73,8 @@ function LandingPage() {
               className="devfolio-btn -mt-7"
               onClick={() => window.open("add link")}
             >
-              <img src={DevfolioLogo} alt="Devfolio Logo" />
-              <span>Apply with Devfolio</span>
+              {/* <img src={DevfolioLogo} alt="Devfolio Logo" /> */}
+              <span>Registrations Starting Soon</span>
             </button>
 
             {/* Description */}

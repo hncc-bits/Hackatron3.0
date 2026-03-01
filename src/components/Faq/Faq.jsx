@@ -118,7 +118,7 @@ export default function Faq() {
 
             <FaqItem
               question="Can I participate alone or in need a team?"
-              answer="No, You cannot participate alone. Your team must comprise of 4 to 5 members including at least one female member."
+              answer="No, You cannot participate alone. Your team must comprise of 4 members including at least one female member."
               isOpen={openIndex === 3}
               onClick={() => toggle(3)}
               className="pb-1.5 pt-1.5 md:pb-3 md:pt-3"
