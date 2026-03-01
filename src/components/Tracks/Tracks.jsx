@@ -14,6 +14,7 @@ import education_card from '../../assets/images/tracks/education_card.png';
 import education from '../../assets/images/tracks/education.png';
 import web3_card from '../../assets/images/tracks/web3_card.png';
 import web3 from '../../assets/images/tracks/web3.png';
+import TerminalEffect from '../TerminalEffect.jsx'
 
 import comingSoon from "/images/coming_soon.gif"
 import man from "/images/track3.png"
@@ -91,7 +92,7 @@ const Tracks = () => {
             {/* <img src={stars} className=" z-0 absolute pointer-events-none w-screen opacity-50"></img> */}
             {/*<img src={trackData[selectedTrack - 1].image} alt="" className='z-1 absolute pointer-events-none left-0 right-0 mx-auto max-w-full xl:-translate-y-48 opacity-50'/>*/}
             <div className='text-white max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto z-2'>
-                <h1 className='py-6 md:text-left text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]'>$ ls -a <span className='text-white'>TRACKS</span></h1>
+                <TerminalEffect text="$ ls -a TRACKS" />
                 {/*<div className='lg:flex'>   
                     <div className="track-section pl-12 xl:w-1/2 mr-5 mb-5 xl:mb-0" >
                         {selectedTrack ? (

@@ -54,3 +54,39 @@ body {
 .read-the-docs {
   color: #888;
 }
+/* Terminal Container */
+.terminal-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Use a bold, blocky font. VT323 is best if you can import it */
+  /* font-family: 'Courier New', Courier, monospace;  */
+  font-weight: 400;
+  /* text-transform: uppercase; */
+  
+  /* LAYERED GLOW: Mimics the sunlight/glow in your posters */
+  text-shadow: 
+    2px 2px 0px rgba(0, 0, 0, 0.8), /* Dark 3D Depth */
+    0 0 15px rgba(57, 255, 20, 0.3), /* Soft Green Aura */
+    0 0 30px rgba(57, 255, 20, 0.2); /* Distant environmental glow */
+  
+  line-height: 1.2;
+}
+
+/* Updated Cursor: Adding a 'Pulse' to the glow */
+.terminal-cursor {
+  display: inline-block;
+  width: 4px;
+  height: 0.9em;
+  background-color: #39FF14; 
+  margin-left: 10px;
+  box-shadow: 
+    0 0 10px #39FF14,
+    0 0 20px rgba(57, 255, 20, 0.6);
+  animation: terminal-blink 1.2s step-end infinite;
+}
+
+@keyframes terminal-blink {
+  0%, 100% { opacity: 1; filter: brightness(1.2); }
+  50% { opacity: 0; }
+}

@@ -6,6 +6,7 @@ import stars from "../../assets/images/discord/stars.svg";
 import Wihts from "/images/Wihts.png";
 import Wihts1 from "/images/Wihts1.png";
 import './Wihts.css'
+import TerminalEffect from '../TerminalEffect.jsx'
 
 const Whits = ()=>{
     const { wihts } = infoConfig;
@@ -41,9 +42,7 @@ const Whits = ()=>{
               <div className="text-white max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto">
         
                 
-                <h1 className="py-6 text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]">
-                  $ man --intro <span className="text-white">HACKATRON</span>
-                </h1>
+                <TerminalEffect text="$ man --intro HACKATRON" />
         
                
                 <div className="flex justify-center">
@@ -55,8 +54,7 @@ const Whits = ()=>{
     border-[6px] max-lg:border-4
     border-dashed border-[#7f7cff]
     p-6 md:p-10
-    backdrop-blur-[2px]
-    shadow-[0_0_25px_rgba(127,124,255,0.25)]
+   transition-all duration-300 hover:shadow-[0_0_45px_rgba(127,124,255,0.45)] hover:-translate-y-1
     text-center
     overflow-visible
   "
@@ -83,7 +81,7 @@ const Whits = ()=>{
   tracking-wide
   mb-6
   text-center
-  drop-shadow-[0_0_10px_rgba(255,92,168,0.9)]
+  
 ">
     WHAT IS HACKATRON ?
   </h2>

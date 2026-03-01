@@ -1,5 +1,6 @@
 import stars from "../../assets/images/discord/stars.svg";
 import React, { useState, useEffect } from "react";
+import TerminalEffect from '../TerminalEffect.jsx'
 
 const Venue = () => {
   const [bgPosition, setBgPosition] = useState({ x: 0, y: 0 });
@@ -29,9 +30,7 @@ const Venue = () => {
       <div className="relative text-white max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto">
 
 
-        <h1 className="py-6 text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]">
-          $ find <span className="text-white">DESTINATION</span>.txt
-        </h1>
+        <TerminalEffect text="$ find DESTINATION.txt" />
 
         <div className="grid xl:grid-cols-2 gap-12 px-4 sm:p-10">
 

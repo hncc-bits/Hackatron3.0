@@ -4,6 +4,7 @@ import win1 from '../../assets/images/prizes/win1.png';
 import win2 from '../../assets/images/prizes/win2.png';
 import win3 from '../../assets/images/prizes/win3.png';
 import small_trophy from '../../assets/images/prizes/small_trpohy.png'
+import TerminalEffect from '../TerminalEffect.jsx'
 
 const Prizes = () => {
     const [bgPosition, setBgPosition] = useState({ x: 0, y: 0 });
@@ -40,9 +41,7 @@ const Prizes = () => {
             /> */}
             <div className='text-white max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto z-2'>
 
-                <h1 className="py-6 md:text-left text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]">
-                    $ sudo decrypt <span className="text-white">PRIZES</span>.enc
-                </h1>
+                <TerminalEffect text="$ sudo decrypt PRIZES.enc" />
                 <div className="flex justify-center items-center h-full">
                     <div className="px-4 sm:p-10 text-left w-[90vw] sm:w-[80vw] mx-auto">
                         {/* Main Rectangle */}

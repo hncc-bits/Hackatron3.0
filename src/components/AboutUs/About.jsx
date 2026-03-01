@@ -4,6 +4,7 @@ import stars from "../../assets/images/discord/stars.svg";
 import aboutPixel from "/images/AboutUs.png";
 import aboutPixel2 from "/images/AboutUs1.png";
 import './About.css';
+import TerminalEffect from '../TerminalEffect.jsx'
 
 const About = () => {
   const [bgPosition, setBgPosition] = useState({ x: 0, y: 0 });
@@ -34,9 +35,7 @@ const About = () => {
     >
       <div className="text-white max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto">
 
-        <h1 className="py-6 text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]">
-          $ whoami --<span className="text-white">ABOUT_US</span>.
-        </h1>
+        <TerminalEffect text="$ whoami --ABOUT_US" />
 
         <div className="flex justify-center">
           <div className="w-full px-4 sm:p-10">
@@ -47,8 +46,7 @@ const About = () => {
                 border-dashed border-[#7f7cff]
                 p-6 md:p-10
                 text-center
-                backdrop-blur-[2px]
-                shadow-[0_0_25px_rgba(127,124,255,0.25)]
+                transition-all duration-300 hover:shadow-[0_0_45px_rgba(127,124,255,0.45)] hover:-translate-y-1
                 animate-borderGlow
                 overflow-visible
               "
@@ -73,7 +71,7 @@ const About = () => {
   text-pink-400
   tracking-wide
   mb-6
-  drop-shadow-[0_0_10px_rgba(255,92,168,0.9)]
+
 ">
                 ABOUT US
               </h2>

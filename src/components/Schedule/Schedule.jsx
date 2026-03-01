@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import right_key from '../../assets/images/right_key.svg';
 import left_key from '../../assets/images/left_key.svg';
 import bounty from '../../assets/images/bounty.svg';
-
+import TerminalEffect from '../TerminalEffect.jsx'
 function Schedule() {
     const timelineWrapperRef = useRef(null);
     const [bgPosition, setBgPosition] = useState({ x: 0, y: 0 });
@@ -77,7 +77,10 @@ function Schedule() {
                 }}
             >
                 <div className='max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto'>
-                    <h1 className='mx-5 xl:mx-0 py-6 text-left text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]'>$ tail -f <span className='text-white'>SCHEDULE</span>.log</h1>
+                    <div className="mx-5 ">
+                        <TerminalEffect text="$ tail -f SCHEDULE.log" />
+                    </div>
+                    
                     <div className="mx-5 xl:mx-0 timeline mx-30 flex justify-center">
                         <button className="prev mr-10 opacity-50 hover:opacity-100 min-w-[30px] 3xl:min-w-[60px]">
                             <img src={left_key} alt="" />
