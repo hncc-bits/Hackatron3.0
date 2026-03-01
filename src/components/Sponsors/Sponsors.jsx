@@ -66,7 +66,9 @@ const Sponsors = () => {
             // backgroundSize: bgSize,
         }} id='sponsors'>
             <div className="max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto">
-                <TerminalEffect text="$ cat ~/.ssh/SPONSORS.db" />
+               <div className="mx-5">
+                 <TerminalEffect text="$ cat ~/.ssh/SPONSORS.db" />
+               </div>
 
                 <div className='mb-4 flex flex-col gap-1 sm:gap-1'>
                     {/* <h1 className="font-vt323 font-medium text-[12vw] leading-[12vw] sm:leading-[4rem] md:leading-[5rem] md:text-[9vw] lg:text-[7vw] xl:text-[6vw] xl:leading-[6rem] 3xl:leading-[8rem]" style={{ background: 'linear-gradient(to right, blue,blue,#dd50b3,#dd50b3)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>SPONSORS</h1> */}

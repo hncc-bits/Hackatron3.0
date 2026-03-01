@@ -57,7 +57,9 @@ const PastSponsors = () => {
             // backgroundSize: bgSize,
         }} id='past-sponsors'>
             <div className="max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto">
-                <TerminalEffect text="$ zcat PAST_SPONSORS.gz" />
+                <div className="mx-5">
+                    <TerminalEffect text="$ zcat PAST_SPONSORS.gz" />
+                </div>
 
                 <div className='mb-4 flex flex-col gap-1 sm:gap-1'>
                     <p className='font-vt323 text-gray-400 w-[90vw] leading-[5vw] text-[4.5vw] sm:leading-0 sm:px-0  sm:w-[70vw] sm:text-lg sm:leading-5 md:text-[2.8vw] md:leading-6 md:w-[75vw] lg:text-xl lg:w-[56vw] lg:leading-5 xl:text-3xl xl:w-[55rem] 3xl:text-5xl 3xl:w-[75rem] text-center mx-auto'>Thank you to our generous sponsors from previous years!</p>
