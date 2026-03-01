@@ -2,7 +2,7 @@ import React from "react";
 import "./Hackatron2.css";
 import SectionLayout from "./SectionLayout";
 import { glimpseConfig } from "../../../config/glimpse";
-
+import TerminalEffect from'../TerminalEffect';
 const ImageCard = ({ src1, src2, src3, className, content, content2 }) => {
   const numbers = content.match(/\d+/g);
   const text = content.replace(numbers, "");
@@ -44,11 +44,7 @@ const Glimpse = () => {
   return (
     <SectionLayout
       Title={
-        <span className="text-[#9E9E9E]">
-
-          $ man <span className="text-white">Previous</span> <span className="text-[#ff0000]">Events</span>
-
-        </span>
+        <TerminalEffect text="$ tree ./past_events" />
       }
       id="Glimpse"
     >
