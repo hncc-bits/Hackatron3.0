@@ -35,8 +35,8 @@ function Schedule() {
             });
 
             let maxScrollLeft = timelineElementWidth * 4;
-            if (timelineWrapperWidth >= timelineElementWidth * 2) maxScrollLeft = timelineElementWidth * 2;
-            if (timelineWrapperWidth >= timelineElementWidth * 3) maxScrollLeft = timelineElementWidth;
+            if (timelineWrapperWidth >= timelineElementWidth * 3) maxScrollLeft = timelineElementWidth * 2;
+            if (timelineWrapperWidth >= timelineElementWidth * 4) maxScrollLeft = timelineElementWidth;
 
             document.querySelector('.next').addEventListener('click', () => {
                 const timelineWrapperWidth =
@@ -130,7 +130,25 @@ function Schedule() {
                                         April 4
                                     </h1>
                                     <h2 className="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl 3xl:text-4xl">
-                                        07:00 PM
+                                        09:00 AM
+                                    </h2>
+                                    <img loading="lazy" src={bounty} alt="" className='3xl:w-full' />
+                                    <h2 className="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl 3xl:text-5xl">
+                                        Opening
+                                    </h2>
+                                    <h2 className="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl 3xl:text-5xl">
+                                        Ceremony
+                                    </h2>
+                                </div>
+
+                                <div
+                                    className="flex flex-col justify-center items-center min-w-[330px] 3xl:min-w-[660px] m-1"
+                                >
+                                    <h1 className="text-[#DA77D6] text-3xl md:text-4xl xl:text-4xl 3xl:text-6xl">
+                                        April 4
+                                    </h1>
+                                    <h2 className="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl 3xl:text-4xl">
+                                        11:00 AM
                                     </h2>
                                     <img loading="lazy" src={bounty} alt="" className='3xl:w-full' />
                                     <h2 className="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl 3xl:text-5xl">
@@ -145,10 +163,10 @@ function Schedule() {
                                     className="flex flex-col justify-center items-center min-w-[330px] 3xl:min-w-[660px] m-1"
                                 >
                                     <h1 className="text-[#FFC977] text-3xl md:text-4xl xl:text-4xl 3xl:text-6xl">
-                                        April 6
+                                        April 5
                                     </h1>
                                     <h2 className="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl 3xl:text-4xl">
-                                        07:00 AM
+                                        11:00 PM
                                     </h2>
                                     <img loading="lazy" src={bounty} alt="" className='3xl:w-full' />
                                     <h2 className="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl 3xl:text-5xl">

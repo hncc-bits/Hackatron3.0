@@ -69,7 +69,7 @@ const Venue = () => {
                 <p className="text-gray-200 text-lg md:text-xl xl:text-2xl leading-relaxed">
                   4th – 5th April 2026
                   <br />
-                  8:00 AM onwards
+                  9:00 AM onwards
                 </p>
               </div>
             </div>
